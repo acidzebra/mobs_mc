@@ -48,7 +48,8 @@ local rabbit = {
 	},
 	-- Follow (yellow) dangelions, carrots and golden carrots
 	follow = mobs_mc.follow.rabbit,
-	view_range = 8,
+	view_range = 6,
+	runaway_from = {"mobs_mc:wolf", "dmobs:fox", "player"},
 	-- Eat carrots and reduce their growth stage by 1
 	replace_rate = 10,
 	replace_what = mobs_mc.replace.rabbit,

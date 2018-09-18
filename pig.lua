@@ -17,7 +17,7 @@ mobs:register_mob("mobs_mc:pig", {
 		"mobs_mc_pig.png", -- base
 		"blank.png", -- saddle
 	}},
-	visual_size = {x=2.5, y=2.5},
+	visual_size = {x=1.7, y=1.7},
 	makes_footstep_sound = true,
 	walk_velocity = 1,
 	run_velocity = 3,
@@ -50,6 +50,7 @@ mobs:register_mob("mobs_mc:pig", {
 	},
 	follow = mobs_mc.follow.pig,
 	view_range = 5,
+	runaway_from = {"mobs_mc:wolf"},
 	do_custom = function(self, dtime)
 
 		-- set needed values if not already present

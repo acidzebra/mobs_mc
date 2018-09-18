@@ -59,7 +59,7 @@ mobs:register_mob("mobs_mc:squid", {
 
 local water = mobs_mc.spawn_height.water
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
-mobs:spawn_specific("mobs_mc:squid", mobs_mc.spawn.water, {mobs_mc.items.water_source}, 0, minetest.LIGHT_MAX+1, 30, 5500, 3, water-16, water)
+mobs:spawn_specific("mobs_mc:squid", mobs_mc.spawn.water, {mobs_mc.items.water_source}, 0, minetest.LIGHT_MAX+1, 30, 5500, 3, water-400, water-15)
 
 -- compatibility
 mobs:alias_mob("mobs:squid", "mobs_mc:squid")

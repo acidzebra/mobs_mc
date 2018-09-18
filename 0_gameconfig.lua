@@ -265,7 +265,7 @@ mobs_mc.enderman_block_texture_overrides = {
 -- List of nodes on which mobs can spawn
 mobs_mc.spawn = {
 	solid = { "group:cracky", "group:crumbly", "group:shovely", "group:pickaxey" }, -- spawn on "solid" nodes (this is mostly just guessing)
-
+    forest = { "default:dirt_with_coniferous_litter", "aotearoa.forest_peat" },
 	grassland = { mobs_mc.items.grass_block, "ethereal:prairie_dirt" },
 	savanna = { "default:dirt_with_dry_grass" },
 	grassland_savanna = { mobs_mc.items.grass_block, "default:dirt_with_dry_grass" },

@@ -122,7 +122,7 @@ mobs:register_mob("mobs_mc:creeper", {
 	water_damage = 1,
 	lava_damage = 4,
 	light_damage = 0,
-	view_range = 16,
+	view_range = 8,
 	blood_amount = 0,
 })
 

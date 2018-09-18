@@ -38,13 +38,13 @@ end
 --mcsheep
 mobs:register_mob("mobs_mc:sheep", {
 	type = "animal",
-	hp_min = 8,
-	hp_max = 8,
+	hp_min = 4,
+	hp_max = 7,
 
 	collisionbox = {-0.45, -0.01, -0.45, 0.45, 1.29, 0.45},
 
 	visual = "mesh",
-	visual_size = {x=3, y=3},
+	visual_size = {x=2, y=2},
 	mesh = "mobs_mc_sheepfur.b3d",
 	gotten_mesh = "mobs_mc_sheepnaked.b3d",
 	textures = { sheep_texture("unicolor_white") },
@@ -78,8 +78,8 @@ mobs:register_mob("mobs_mc:sheep", {
 		run_start = 0,		run_end = 40,
 	},
 	follow = mobs_mc.follow.sheep,
-	view_range = 12,
-
+	view_range = 8,
+	runaway_from = {"mobs_mc:wolf", "dmobs:fox"},
 	-- Eat grass
 	replace_rate = 20,
 	replace_what = mobs_mc.replace.sheep,

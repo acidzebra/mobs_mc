@@ -59,7 +59,9 @@ mobs:register_mob("mobs_mc:chicken", {
 	},
 
 	follow = mobs_mc.follow.chicken,
-	view_range = 16,
+	view_range = 7,
+	specific_attack = {"mobs_bugslive:bug"},
+	runaway_from = {"mobs_mc:wolf", "dmobs:fox"},
 	fear_height = 4,
 
 	on_rightclick = function(self, clicker)
