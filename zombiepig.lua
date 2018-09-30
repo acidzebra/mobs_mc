@@ -69,7 +69,7 @@ local pigman = {
 	water_damage = 1,
 	lava_damage = 0,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	view_range = 16,
 }
 

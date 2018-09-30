@@ -29,7 +29,7 @@ mobs:register_mob("mobs_mc:silverfish", {
 	water_damage = 1,
 	lava_damage = 4,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	replace_what = mobs_mc.replace.silverfish,
 	replace_rate = 2,
 	animation = {

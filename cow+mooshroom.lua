@@ -71,7 +71,7 @@ local cow_def = {
 	end,
 	follow = mobs_mc.items.wheat,
 	view_range = 10,
-	fear_height = 4,
+	fear_height = 2,
 }
 
 mobs:register_mob("mobs_mc:cow", cow_def)

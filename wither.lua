@@ -30,7 +30,7 @@ mobs:register_mob("mobs_mc:wither", {
 	visual_size = {x=4, y=4},
 	makes_footstep_sound = true,
 	view_range = 16,
-	fear_height = 4,
+	fear_height = 2,
 	walk_velocity = 2,
 	run_velocity = 4,
 	stepheight = 1.2,

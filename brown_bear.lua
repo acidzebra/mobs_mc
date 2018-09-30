@@ -52,7 +52,7 @@ mobs:register_mob("mobs_mc:brown_bear", {
 	floats = 1,
 	lava_damage = 5,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	sounds = {
 		random = "Cowhurt1", -- TODO: Replace
 		distance = 16,

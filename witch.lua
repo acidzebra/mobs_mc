@@ -76,7 +76,7 @@ mobs:register_mob("mobs_mc:witch", {
 	lava_damage = 5,
 	light_damage = 0,
 	view_range = 16,
-	fear_height = 4,
+	fear_height = 2,
 
 })
 

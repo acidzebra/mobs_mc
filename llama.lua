@@ -37,7 +37,7 @@ mobs:register_mob("mobs_mc:llama", {
 	water_damage = 0,
 	lava_damage = 4,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	sounds = {
 		random = "mobs_mc_llama",
 		-- TODO: Death and damage sounds

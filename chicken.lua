@@ -62,7 +62,7 @@ mobs:register_mob("mobs_mc:chicken", {
 	view_range = 7,
 	specific_attack = {"mobs_bugslive:bug"},
 	runaway_from = {"mobs_mc:wolf", "dmobs:fox"},
-	fear_height = 4,
+	fear_height = 2,
 
 	on_rightclick = function(self, clicker)
 		if mobs:feed_tame(self, clicker, 1, true, true) then return end

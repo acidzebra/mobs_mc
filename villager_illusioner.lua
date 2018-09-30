@@ -44,7 +44,7 @@ mobs:register_mob("mobs_mc:illusioner", {
 		-- 120-140 magic arm swinging, 140-150 transition between magic to bow shooting
 	},
 	view_range = 16,
-	fear_height = 4,
+	fear_height = 2,
 	lava_damage = 4,
 })
 

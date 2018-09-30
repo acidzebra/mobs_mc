@@ -47,7 +47,7 @@ local ocelot = {
 	lava_damage = 4,
 	light_damage = 0,
 	fall_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	sounds = {
 		random = "mobs_kitten",
 		distance = 16,
@@ -59,7 +59,7 @@ local ocelot = {
 		run_start = 0,		run_end = 40,
 	},
 	follow = mobs_mc.follow.ocelot,
-	view_range = 12,
+	view_range = 10,
 	passive = true,
 	attack_type = "dogfight",
 	pathfinding = 1,

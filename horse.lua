@@ -85,7 +85,7 @@ local horse = {
 		run_start = 0, run_end = 40,
 	},
 	textures = horse_textures,
-	fear_height = 4,
+	fear_height = 2,
 	fly = false,
 	walk_chance = 60,
 	view_range = 16,

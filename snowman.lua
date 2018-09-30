@@ -36,7 +36,7 @@ mobs:register_mob("mobs_mc:snowman", {
 	makes_footstep_sound = true,
 	attack_type = "shoot",
 	arrow = "mobs_mc:snowball_entity",
-	shoot_interval = 1,
+	shoot_interval = 5,
 	shoot_offset = 1,
 	animation = {
 		speed_normal = 25,

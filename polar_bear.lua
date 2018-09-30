@@ -16,8 +16,8 @@ mobs:register_mob("mobs_mc:polar_bear", {
 	runaway = false,
 	passive = false,
 	stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 30,
+	hp_min = 25,
+	hp_max = 35,
 	collisionbox = {-0.7, -0.01, -0.7, 0.7, 1.39, 0.7},
 	visual = "mesh",
 	mesh = "mobs_mc_polarbear.b3d",
@@ -26,11 +26,13 @@ mobs:register_mob("mobs_mc:polar_bear", {
 	},
 	visual_size = {x=3.0, y=3.0},
 	makes_footstep_sound = true,
-	damage = 6,
-	reach = 2,
+	damage = 4,
+	reach = 1,
 	walk_velocity = 1.2,
 	run_velocity = 2.4,
 	group_attack = true,
+	attack_animals = true,
+	specific_attack = {"player", "arctic_life:penguin", "arctic_life:walrus", "mobs_animal:penguin", "mobs_mc:wolf"},
 	attack_type = "dogfight",
 	drops = {
 		-- 3/4 chance to drop raw fish (poor approximation)
@@ -49,7 +51,7 @@ mobs:register_mob("mobs_mc:polar_bear", {
 	floats = 1,
 	lava_damage = 5,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	sounds = {
 		random = "Cowhurt1", -- TODO: Replace
 		distance = 16,
@@ -61,7 +63,8 @@ mobs:register_mob("mobs_mc:polar_bear", {
 		run_start = 0,		run_end = 40,
 	},
 
-	view_range = 16,
+	view_range = 10,
+	day_toggle = true,
 })
 
 

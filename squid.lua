@@ -10,7 +10,18 @@ local S, NS = dofile(MP.."/intllib.lua")
 
 mobs:register_mob("mobs_mc:squid", {
     type = "animal",
-    passive = true,
+    passive = false,
+	runaway_from = {"mobs_sharks:shark_lg", "mobs_sharks:shark_md", "mobs_sharks:shark_sm"},
+	attack_animals = true,
+	specific_attack = {"clams:whiteshell"},
+	replace_rate = 1,
+	replace_what = {
+        {"whiteshell:whiteshell", "air", 0}
+		},
+
+	attack_type = "dogfight",
+    damage = 2,
+	reach = 1,
     hp_min = 10,
     hp_max = 10,
     armor = 100,
@@ -23,7 +34,7 @@ mobs:register_mob("mobs_mc:squid", {
     },
     sounds = {
 		damage = "mobs_mc_squid_hurt",
-		distance = 16,
+		distance = 5,
     },
     animation = {
 		stand_start = 1,
@@ -35,23 +46,23 @@ mobs:register_mob("mobs_mc:squid", {
 	},
     drops = {
 		{name = mobs_mc.items.black_dye,
-		chance = 1,
+		chance = 5,
 		min = 1,
-		max = 3,},
+		max = 2,},
 	},
     visual_size = {x=1.75, y=1.75},
     makes_footstep_sound = false,
-    stepheight = 0.1,
+    stepheight = 1,
     fly = true,
     fly_in = { mobs_mc.items.water_source, mobs_mc.items.river_water_source },
     jump = false,
     fall_speed = 0.5,
-    view_range = 16,
+    view_range = 12,
     water_damage = 0,
     lava_damage = 4,
     light_damage = 0,
-    runaway = true,
-    fear_height = 4,
+    --runaway = true,
+    fear_height = 5,
     blood_texture = "mobs_mc_squid_blood.png",
 })
 
@@ -59,7 +70,7 @@ mobs:register_mob("mobs_mc:squid", {
 
 local water = mobs_mc.spawn_height.water
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
-mobs:spawn_specific("mobs_mc:squid", mobs_mc.spawn.water, {mobs_mc.items.water_source}, 0, minetest.LIGHT_MAX+1, 30, 5500, 3, water-400, water-15)
+mobs:spawn_specific("mobs_mc:squid", mobs_mc.spawn.water, {mobs_mc.items.water_source}, 0, minetest.LIGHT_MAX+1, 30, 5500, 3, water-400, water-10)
 
 -- compatibility
 mobs:alias_mob("mobs:squid", "mobs_mc:squid")

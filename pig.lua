@@ -30,7 +30,7 @@ mobs:register_mob("mobs_mc:pig", {
 	water_damage = 1,
 	lava_damage = 4,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	sounds = {
 		random = "mobs_pig",
 		death = "mobs_pig_angry",
@@ -49,7 +49,7 @@ mobs:register_mob("mobs_mc:pig", {
 		run_end = 40,
 	},
 	follow = mobs_mc.follow.pig,
-	view_range = 5,
+	view_range = 7,
 	runaway_from = {"mobs_mc:wolf"},
 	do_custom = function(self, dtime)
 

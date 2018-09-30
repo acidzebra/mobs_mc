@@ -16,8 +16,8 @@ local S, NS = dofile(MP.."/intllib.lua")
 
 mobs:register_mob("mobs_mc:creeper", {
 	type = "monster",
-	hp_min = 20,
-	hp_max = 20,
+	hp_min = 18,
+	hp_max = 25,
 	collisionbox = {-0.3, -0.01, -0.3, 0.3, 1.69, 0.3},
 	pathfinding = 1,
 	visual = "mesh",
@@ -39,7 +39,6 @@ mobs:register_mob("mobs_mc:creeper", {
 	run_velocity = 2.1,
 	runaway_from = { "mobs_mc:ocelot", "mobs_mc:cat" },
 	attack_type = "explode",
-	
 	explosion_radius = 3,
 	reach = 4,
 	explosion_damage_radius = 7,
@@ -118,16 +117,17 @@ mobs:register_mob("mobs_mc:creeper", {
 		look_end = 108,
 	},
 	floats = 1,
-	fear_height = 4,
+	fear_height = 2,
 	water_damage = 1,
 	lava_damage = 4,
-	light_damage = 0,
-	view_range = 8,
+	light_damage = 2,
+	view_range = 10,
+	day_toggle = false,
 	blood_amount = 0,
 })
 
 
-mobs:spawn_specific("mobs_mc:creeper", mobs_mc.spawn.solid, {"air"}, 0, 7, 20, 16500, 2, mobs_mc.spawn_height.overworld_min, mobs_mc.spawn_height.overworld_max)
+mobs:spawn_specific("mobs_mc:creeper", mobs_mc.spawn.solid, {"air"}, 0, 8, 20, 16500, 2, mobs_mc.spawn_height.overworld_min, mobs_mc.spawn_height.overworld_max)
 
 -- compatibility
 mobs:alias_mob("mobs:creeper", "mobs_mc:creeper")

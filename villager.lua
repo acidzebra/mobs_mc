@@ -68,7 +68,7 @@ mobs:register_mob("mobs_mc:villager", {
 	lava_damage = 4,
 	light_damage = 0,
 	view_range = 16,
-	fear_height = 4,
+	fear_height = 2,
 	--[[
 	on_rightclick = function(self, clicker)
 		local inv

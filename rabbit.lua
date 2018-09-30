@@ -39,7 +39,7 @@ local rabbit = {
 	water_damage = 1,
 	lava_damage = 4,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
 		stand_start = 0,		stand_end = 0,
@@ -48,7 +48,7 @@ local rabbit = {
 	},
 	-- Follow (yellow) dangelions, carrots and golden carrots
 	follow = mobs_mc.follow.rabbit,
-	view_range = 6,
+	view_range = 7,
 	runaway_from = {"mobs_mc:wolf", "dmobs:fox", "player"},
 	-- Eat carrots and reduce their growth stage by 1
 	replace_rate = 10,

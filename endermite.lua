@@ -30,7 +30,7 @@ mobs:register_mob("mobs_mc:endermite", {
 	water_damage = 0,
 	lava_damage = 4,
 	light_damage = 0,
-	fear_height = 4,
+	fear_height = 2,
 	view_range = 16,
 	damage = 2,
 	reach = 1,

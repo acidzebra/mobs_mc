@@ -321,7 +321,7 @@ mobs:register_mob("mobs_mc:enderman", {
 	lava_damage = 4,
 	light_damage = 0,
 	view_range = 16,
-	fear_height = 4,
+	fear_height = 2,
 	attack_type = "dogfight",
 	blood_amount = 0,
 })
